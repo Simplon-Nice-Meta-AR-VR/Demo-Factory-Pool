@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ClickDetector : MonoBehaviour
 {
+    [SerializeField] private Factory factory;
+    [SerializeField] private Spheres spheres;
+
     private Ray ray;
     private RaycastHit hit;
     // Start is called before the first frame update
@@ -20,7 +23,7 @@ public class ClickDetector : MonoBehaviour
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log(hit.point);
+                spheres.Add(factory.Generate(hit.point));
             }
         }
     }
