@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f87a2ea488cb9a0419a4a9432871628b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spheresPool: {fileID: 2044982680}
+  spheresPool: {fileID: 2044982682}
   spheres: {fileID: 1461680775}
 --- !u!1 &963194225
 GameObject:
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e248545434707e548b5c04a0b5ae2b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spherePool: {fileID: 2044982680}
+  spherePool: {fileID: 2044982682}
   yThreshold: -6
 --- !u!4 &1461680776
 Transform:
@@ -477,7 +477,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2044982681}
-  - component: {fileID: 2044982680}
+  - component: {fileID: 2044982682}
   m_Layer: 0
   m_Name: Pool
   m_TagString: Untagged
@@ -485,19 +485,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2044982680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044982679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f518ebc5b6ee2e4982e48066d369fe7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spheresFactory: {fileID: 1952447185}
 --- !u!4 &2044982681
 Transform:
   m_ObjectHideFlags: 0
@@ -513,6 +500,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2044982682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044982679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3ce31e99f0728468ce20da9424c437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spheresFactory: {fileID: 1952447185}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
