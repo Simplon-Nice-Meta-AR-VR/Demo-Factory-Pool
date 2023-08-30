@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spheres : MonoBehaviour
 {
+    [SerializeField] private Pool spherePool;
     [SerializeField] private float yThreshold = -6;
 
     private List<Transform> spheres;
@@ -28,7 +29,8 @@ public class Spheres : MonoBehaviour
         {
             if (t.position.y < yThreshold)
             {
-                Destroy(t.gameObject);
+                //Destroy(t.gameObject);
+                spherePool.Release(t);
                 toRemove.Add(t);
             }
         }
